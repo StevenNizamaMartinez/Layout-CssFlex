@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* -----> HEADER <----- */
+
+
+header {
+  background-color: #1abc9c;
+}
+
+.header {
+  padding: 40px;
+}
+
+.header h1,
+.header p {
+  color: #ffff;
+  font-size: 48px;
+  font: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+/* ----->NAV BAR <----- */
+
+nav {
+  background-color: #333333;
+  
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+}
+
+ul a {
+  display: block;
+  padding: 16px;
+  justify-content: end;
+}
+
+ul a {
+  color: #ffff;
+}
+
+/* -----> ASIDE AND MAIN - CONTAINER <----- */
+
+.content{
+    display: flex;
+}
+
+/* -----> ASIDE <----- */
+
+
+.content aside{
+    background-color: #f1f1f1;
+    padding: 24px 16px;
+}
+
+.container-aside h2, .container-aside p {
+    margin: 20px 0;
+}
+
+.image {
+  background-color: #aaa;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.image-side{
+    height: 50px;
+    margin: 12px;
+}
+
+/* -----> MAIN <----- */
+
+main{
+    padding: 24px 16px;
+}
+
+.container-main h2 , .container-main p{
+    margin: 20px 0;
+}
+
+/* -----> FOOTER <----- */
+
+
+footer {
+  background-color: #ddd;
+}
+
+footer h2{
+    padding: 48px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    nav ul, .content {
+        display: flex;
+        flex-direction: column;
+      }
+  }
